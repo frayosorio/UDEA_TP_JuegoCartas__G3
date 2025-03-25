@@ -59,8 +59,15 @@ public class FrmJuego extends JFrame {
         getContentPane().add(btnVerificar);
     }
 
+    Jugador jugador1 = new Jugador();
+    Jugador jugador2 = new Jugador();
 
     private void btnRepartirClick(ActionEvent evt) {
+        jugador1.repartir();
+        jugador1.mostrar(pnlJugador1);
+
+        jugador2.repartir();
+        jugador2.mostrar(pnlJugador2);
 
     }
 
